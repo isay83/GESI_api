@@ -39,7 +39,7 @@ export class User extends BaseEntity {
     @UpdateDateColumn({})
     updated_at: Date
 
-    @Column({ default: true })
+    @Column({ default: false })
     active: boolean
 
     @DeleteDateColumn({ nullable: true })

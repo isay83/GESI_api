@@ -56,7 +56,7 @@ CREATE TABLE "User" (
   "university_id" int NOT NULL,
   "created_at" timestamp NOT NULL DEFAULT (CURRENT_TIMESTAMP),
   "updated_at" timestamp NOT NULL DEFAULT (CURRENT_TIMESTAMP),
-  "active" boolean NOT NULL DEFAULT true,
+  "active" boolean NOT NULL DEFAULT false,
   "deleted_at" timestamp
 );
 
@@ -254,7 +254,7 @@ INSERT INTO "University" ("name", "contact_email", "contact_phone") VALUES
 ('Tecnológico Nacional de México en Celaya', 'direccion@itcelaya.edu.mx', '4616625100');
 
 INSERT INTO "Campus" ("name", "address", "university_id") VALUES
-('Campus 1', 'Antonio García Cubas Pte #600 esq. Av. Tecnológico Celaya, Gto.', 1);
+('Campus 1', 'Antonio García Cubas Pte #600 esq. Av. Tecnológico Celaya, Gto.', 1),
 ('Campus 2', 'Antonio García Cubas 1200, Alfredo Vazquez Bonfil, 38010 Celaya, Gto.', 1);
 
 INSERT INTO "Zone" ("name", "description", "campus_id") VALUES
@@ -266,7 +266,7 @@ INSERT INTO "ParkingSpace" ("number", "status", "zone_id") VALUES
 ('G2', 'available', 1),
 ('G3', 'available', 1),
 ('H1', 'available', 2),
-('H2', 'available', 2);
+('H2', 'available', 2),
 ('H3', 'available', 2);
 -- note: status should be one of: 'available', 'occupied', 'reserved', 'maintenance'
 
