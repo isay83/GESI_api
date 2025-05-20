@@ -1,0 +1,15 @@
+export { default as accessPermissionRoutes } from './accessPermission.routes';
+export { default as authProviderRoutes } from './authProvider.routes';
+export { default as campusRoutes } from './campus.routes';
+export { default as externalUserAuthenticationRoutes } from './externalUserAuthentication.routes';
+export { default as licensePlateRoutes } from './licensePlate.routes';
+export { default as parkingPreferenceRoutes } from './parkingPreference.routes';
+export { default as parkingSessionRoutes } from './parkingSession.routes';
+export { default as parkingSpaceRoutes } from './parkingSpace.routes';
+export { default as roleRoutes } from './role.routes';
+export { default as universityRoutes } from './university.routes';
+export { default as unknownLicensePlateRecordRoutes } from './unknownLicensePlateRecord.routes';
+export { default as userRoutes } from './user.routes';
+export { default as userCredentialsRoutes } from './userCredentials.routes';
+export { default as vehicleTypeRoutes } from './vehicleType.routes';
+export { default as zoneRoutes } from './zone.routes';
